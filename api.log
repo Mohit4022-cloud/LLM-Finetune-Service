@@ -1,0 +1,38 @@
+INFO:     Started server process [76162]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+⚠️  Redis unavailable: Error 61 connecting to localhost:6379. Connection refused.
+   Using in-memory cache as fallback
+⚠️  Mock adapters detected - using rule-based generation
+
+============================================================
+🚀 Enterprise-to-Casual LLM Service
+============================================================
+   Model mode: Mock (rule-based)
+   Cache: In-memory
+   Rate limit: 5 requests/minute
+============================================================
+   Ready to serve requests!
+   API docs: http://localhost:8000/docs
+============================================================
+
+INFO:     127.0.0.1:56449 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56479 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56509 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56511 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56513 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56519 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56522 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56524 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56527 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56529 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56532 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56534 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56537 - "POST /generate HTTP/1.1" 429 Too Many Requests
+INFO:     127.0.0.1:56696 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56701 - "POST /generate HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [76162]
