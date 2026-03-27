@@ -8,19 +8,25 @@ venv/
 .venv
 env/
 
-# Poetry
+# Dependency locks
 poetry.lock
 
-# Data & Models
-data/train.jsonl
+# Artifacts
+artifacts/train_runs/
+artifacts/eval/
+artifacts/cache/
 fine_tuned_adapters/
 models/
+checkpoints/
 *.pt
 *.bin
 *.safetensors
+*.ckpt
+*.onnx
 
-# Reports
-REPORT.md
+# Logs
+*.log
+logs/
 
 # Environment
 .env
@@ -32,6 +38,11 @@ REPORT.md
 *.swp
 *.swo
 
-# MLOps
+# MLOps / notebooks
 mlruns/
 *.db
+.ipynb_checkpoints/
+
+# Data caches
+data/cache/
+data/generated/
